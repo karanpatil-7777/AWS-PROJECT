@@ -1,0 +1,66 @@
+# =========================================================================
+# Security & Credentials (CRITICAL: Never commit private keys or AWS credentials)
+# =========================================================================
+*.pem
+*.key
+*.pkcs12
+*.pfx
+*.id_rsa
+credentials
+.aws/
+secrets.json
+
+# =========================================================================
+# Terraform State and Runtime Files
+# =========================================================================
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!terraform.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# =========================================================================
+# Python Cache & Virtual Environments
+# =========================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+
+# =========================================================================
+# Operating System & IDE Files
+# =========================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
